@@ -1,0 +1,10 @@
+#lang racket
+
+#|Introducción a racket|#
+
+;Asi creamos una definicion 
+(define  x 42) ;x = 42
+(define pi 3.14159) ; pi = 3.14159
+(define hello "Hola Mundo!") ; hello = "Hola Mundo!"
+
+

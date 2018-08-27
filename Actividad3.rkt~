@@ -1,0 +1,42 @@
+#lang plai
+
+#| Lenguajes de Programación
+   Actividad de laboratorio 3 |#
+
+;; Función que dada una lista de números, regresa otra con la representación binaria de cada uno de
+;; ellos.
+;; binarios: (listof number) -> (listof number)
+;(define (binarios lst)
+    ;)
+
+(define (dec->bin n aux)
+  (cond [(< n 2) (srting->number aux)]
+        [(if (= 0 (modulo n 2))
+             (dec->bin (quotient n 2) (string-append aux "0"))
+             (dec->bin (quotient n 2) (string-append aux "1"))
+             
+             )]
+      ))
+
+
+; Agregar 5 pruebas aquí.
+
+;; Función que dada una lista de cadenas, elimina aquellas cuya longitud sea menor a k.
+;; quita: (listof a) number -> (listof a)
+
+
+; Agregar 5 pruebas aquí.
+
+;; Función que calcula la reversa de una lista usando foldr.
+;; reversar: (listof a) -> (listof a)
+(define (reversar lst)
+    #| Aquí va su código. |#)
+
+; Agregar 5 pruebas aquí.
+
+;; Función que calcula la reversa de una lista usando foldl.
+;; reversal: (listof a) -> (listof a)
+(define (reversal lst)
+    #| Aquí va su código. |#)
+
+; Agregar 5 pruebas aquí.
